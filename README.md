@@ -23,7 +23,7 @@ service tomcat8 stop
 ### start the app.  By default it will listen or port 8080 for requests to '/healthcheck'
 app.py
 
-### start the server on port 909 with the default path
+### start the server on port 9090 with the default path
 app.py --port 9090
 
 ### start the server on port 9090 with a custom healthcheck path
