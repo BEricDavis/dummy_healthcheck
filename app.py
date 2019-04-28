@@ -21,7 +21,7 @@ def create_app(path):
     Create the Flask app and the provided route
     param: path; The path of the healthcheck.  Must start with a leading '/'
 
-    returne: app; A Flask app with the desired route
+    return: app; A Flask app with the desired route
     """
 
     app = Flask(__name__)
