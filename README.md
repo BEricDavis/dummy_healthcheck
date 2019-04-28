@@ -9,7 +9,7 @@ This is just a basic web app that will respond to the kinds of simple healthchec
 yum install git -y
 
 ### clone this repo somehwhere on your instance:
-git clone https://github.com/BEricDavis/dummy_healthcheck.git && cd dummy_healthchek
+git clone https://github.com/BEricDavis/dummy_healthcheck.git && cd dummy_healthcheck
 
 ### chmod app.py
 chmod 700 app.py
@@ -20,9 +20,12 @@ pip install -r requirements.txt
 ### stop the tomcat app if it's still running
 service tomcat8 stop
 
-### start the server on port 8080 with the default healthcheck path of '/healthcheck'
-app.py --port 8080
+### start the app.  By default it will listen or port 8080 for requests to '/healthcheck'
+app.py
 
-### start the server on port 8080 with a custom healthcheck path<br>
-app.py --port 8080 --path /myCustomService/healthcheck/health.html<br>
+### start the server on port 909 with the default path
+app.py --port 9090
+
+### start the server on port 9090 with a custom healthcheck path
+app.py --port 9090 --path /myCustomService/healthcheck/health.html
 
